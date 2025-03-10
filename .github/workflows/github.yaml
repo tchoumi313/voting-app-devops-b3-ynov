@@ -37,7 +37,7 @@ jobs:
           ignore-base: true
           ignore-unchanged: true
           only-fixed: true
-          target: ${{ secrets.DOCKERHUB_USERNAME }}/voting-app:latest
+          image: ${{ secrets.DOCKERHUB_USERNAME }}/voting-app:latest
 
       - name: Push to Docker Hub
         uses: docker/build-push-action@v5
