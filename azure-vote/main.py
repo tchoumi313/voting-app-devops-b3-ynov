@@ -10,7 +10,8 @@ from flask import Flask, render_template, request
 # Load environment variables from .env file
 load_dotenv()
 
-class TestVote(unittest.TestCase):
+
+class TestVote(unittest.TestCase):    
     def get_vote(self):
         expected = 200
         response = requests.get('http://localhost:8080')
